@@ -1,3 +1,4 @@
+// Package app 应用信息
 package app
 
 import "gohub/pkg/config"

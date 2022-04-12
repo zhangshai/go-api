@@ -1,14 +1,16 @@
+// Package middlewares 存放系统中间件
 package middlewares
 
 import (
 	"bytes"
-	"github.com/gin-gonic/gin"
-	"github.com/spf13/cast"
-	"go.uber.org/zap"
 	"gohub/pkg/helpers"
 	"gohub/pkg/logger"
 	"io/ioutil"
 	"time"
+
+	"github.com/gin-gonic/gin"
+	"github.com/spf13/cast"
+	"go.uber.org/zap"
 )
 
 type responseBodyWriter struct {

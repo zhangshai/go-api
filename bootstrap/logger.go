@@ -5,6 +5,7 @@ import (
 	"gohub/pkg/logger"
 )
 
+// SetupLogger 初始化 Logger
 func SetupLogger() {
 
 	logger.InitLogger(

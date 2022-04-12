@@ -3,12 +3,11 @@ package config
 import "gohub/pkg/config"
 
 func init() {
-
 	config.Add("database", func() map[string]interface{} {
-
 		return map[string]interface{}{
 			// 默认数据库
 			"connection": config.Env("DB_CONNECTION", "mysql"),
+
 			"mysql": map[string]interface{}{
 
 				// 数据库连接信息
@@ -29,6 +28,5 @@ func init() {
 				"database": config.Env("DB_SQL_FILE", "database/database.db"),
 			},
 		}
-
 	})
 }
